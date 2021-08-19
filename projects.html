@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css"/>
+  <link rel="stylesheet" type="text/css" href="css/brands.css">
+ <script type="text/javascript" src="index.js">
+   
+ </script>
+  <title>Portfolio</title>
+  <style type="text/css">
+span{
+    margin-left: 15px;
+}
+button{ 
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+i{
+    margin-right: 5px;
+    margin-left: 2px;
+}
+</style>
+</head>
+<body onload="view()">
+  <div class="template">
+    <i class="fas fa-paper-plane" id="i"></i>
+  </div>
+  <div class="header">
+    <nav class="nav">
+      <i class="fas fa-bars" id="i" onfocus="show_menu()" onblur="hide_menu()"></i>
+      <br/>
+<br/>
+<br/>
+<div class="subnav">
+
+<i class="fas fa-home"></i><a href="index.html">Home</a>
+ 
+ <i class="fas fa-project-diagram"></i><a href="projects.html">Projects</a>
+ 
+ <i class="fas fa-info-circle"></i><a href="about.html">About</a>
+
+ 
+ </nav>
+ 
+  </div>
+  <div class="contact">
+    <center>
+    <a href="https://facebook.com.uzodimmajoseph.ifeanyi7"><i id="contact" class="fab fa-facebook"></i></a>
+    <a href="https://IG.iamgodskid"><i id="contact" class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/07040335014"><i id="contact" class="fab fa-whatsapp"></i></a>
+    <a href="https://uzodimmajoseph112@gmail.com"><i id="contact" class="fas fa-envelope"></i></a><br/>
+    <marquee><h3 style="font-family: Arial, Helvetica, sans-serif; color: mediumseagreen;">CONTACT ME...<i class="fas fa-arrow-up" style="font-size: 20px; color: mediumaquamarine"></i></h3></marquee>
+</center>
+  </div>
+<div class="show">
+    <iframe src="range_clock.html"></iframe>
+    <br/>
+    <span>RANGE CLOCK</span>
+    <br/>
+    <br/>
+    <span>Languages: Html5(30%) > CSS(10%) > JAVASCRIPT(60%)</span>
+    <br/>
+    <br/>
+    <span>Developed For: Adding Stylish to Modern Digital Clocks</span>
+    <br/>
+    <br/>
+    <span>Developed in: Nigerian</span>
+    <br/>
+    <br/>
+    <button onclick="rate()"><i class="fas fa-star"></i> Rate</button><span id="rater"></span>
+    <button onclick="location.href='range.txt';"><i class="fas fa-download"></i>Download Source Code</button>
+</div>
+<div class="show">
+    <iframe src="https://iamgodskid.github.io/xpress"></iframe>
+    <br/>
+    <span>XPRESS CHATBOT VERSION</span>
+    <br/>
+    <br/>
+    <span>Languages: Html5(20%) > CSS(30%) > JAVASCRIPT(50%)</span>
+    <br/>
+    <br/>
+    <span>Developed For: Always around, useful for mobile market, Students guide etc.</span>
+    <br/>
+    <br/>
+    <span>Developed in: Nigerian</span>
+    <br/>
+    <br/>
+    <button onclick="rate()"><i class="fas fa-star"></i> Rate</button><span id="rater"></span>
+    <button onclick="location.href='https://github.com/iamgodskid/xpress'"><i class="fas fa-download"></i>Download Source Code</button>
+</div>
+<script type="text/javascript">
+var rating = 0;
+var rated = document.getElementById("rater");
+let counted = true;
+function rate(){
+if(counted == true){
+    rating++;
+    counted = false;
+    
+}
+else if (counted == false) {
+ rating--;
+ counted = true; 
+}
+rated.innerHTML = rating + " " + "Rating(s)";
+}
+</script>
+</body>
+</html>

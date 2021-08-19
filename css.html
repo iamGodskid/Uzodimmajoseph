@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/all.css">
+<style type="text/css">
+body{
+    height: 100%;
+    width: 100%;
+}
+div{
+    box-sizing: border-box;
+    height: 10000vh;
+    width: 100vh;
+    margin: 0 auto;
+    animation-name: road;
+    animation-iteration-count: infinite;
+    position: fixed;
+    animation-duration: 50s;
+    background: blue;
+    border: 5px dotted black;
+}
+i{
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    animation-name: object;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+@keyframes road{
+    0%{
+        transform: translateY(0vh);
+    }
+    100%{
+        transform: translateY(-1000vh);
+    }
+}
+@keyframes object{
+    0%{
+        transform: translateY(0vh);
+    }
+    100%{
+        transform: translateY(1000vh);
+    }
+}
+p{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+</style>
+    </head>
+    <body onload="anime()">
+        <div>
+<i class="fas fa-car"></i>
+<p id="p"></p>
+        </div>
+        <script defer>
+            function anime(){
+            var output = document.getElementById("p");
+            var marking = "";
+            for(i=1; i<=1000; i++){
+                marking += "|<br/>";
+output.innerHTML = marking;
+            }
+            }
+        </script>
+    </body>
+</html>

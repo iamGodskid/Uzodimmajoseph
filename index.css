@@ -1,0 +1,200 @@
+body{
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+.contact{
+  box-sizing: border-box;
+  box-shadow: none;
+height: 54px;
+width: 50%;
+position: fixed;
+  left: 50%;
+  top:  0px;
+  right: 0px ;
+  background: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: right;
+}
+
+.header{
+  box-sizing: border-box;
+  box-shadow: 2px 3px 3px gray;
+height: 54px;
+width: 50%;
+position: fixed;
+  left: 0px;
+  top:  0px;
+  right: 0px ;
+  background: mediumseagreen;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.subnav{
+  display: none;
+  position: absolute;
+  width: 40%;
+  height: 100vh;
+  float: left;
+  box-sizing: border-box;
+  background: mintcream;
+  transition: opacity 4s;
+  opacity: 0;
+}
+.subnav>a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  font-style: italic;
+  display: block;
+  height: 30px;
+  margin-bottom: 5px;
+  background: mediumaquamarine;
+}
+.subnav>i{
+  font-size:17px;
+  display: block;
+  float: left;
+  margin-right: 2px;
+  margin-left: 15px;
+  color: black;
+}
+#i{
+  font-size: 30px;
+  color: black;
+  border: white;
+  float: left;
+  display: inline-block;
+}
+#contact{
+  font-size: 30px;
+  color: black;
+  border: white;
+  text-align: center;
+  opacity: 0.6;
+  margin-right: 10px;
+}
+.nav{
+  display: inline-block;
+}
+.nav:hover>.subnav{
+  display: block;
+  opacity: 1;
+}
+.fa{
+  float: right;
+}
+.fa>i{
+  font-size: 20px;
+  color: mediumseagreen;
+  border: white;
+  float: right;
+}
+.major{
+  position: fixed;
+  background: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+.major>h4{
+  font-size: 30px;
+  opacity: 0.5;
+  font-family: Monospace;
+  font-weight: bold;
+  font-style: italic;
+  color: grey;
+  margin-top: 50%;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-stretch: expanded;
+  text-shadow: 3px 4px 2px mediumseagreen;
+}
+.main{
+  margin-top: 60px;
+  float: left;
+  box-sizing: border-box;
+  box-shadow: 3px 4px 4px black;
+  width: 80vh;
+  height: 60vh;
+  border: none;
+}
+#img{
+  height: 180px;
+  width: 150px;
+  border-top: none;
+  border-bottom: none;
+  border-left: 3px inset mediumaquamarine;
+  border-right: 3px inset mediumaquamarine;
+  border-radius: 15px;
+  background: grey;
+  float: left;
+  margin-right: 5px;
+}
+button{
+  border: none;
+  background: mediumseagreen;
+  color: black;
+  height: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.template{
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 20vh;
+  width: 20vh;
+  float: right;
+  opacity: 0.65;
+  animation-name: templar;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  border-top: 20px solid mediumaquamarine;
+  border-bottom: 20px solid mediumaquamarine;
+  position: fixed;
+  top: 60px;
+  border-radius: 50%;
+}
+@keyframes templar {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+button>span{
+  color: black;
+}
+span{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+.show{
+  margin-top: 60px;
+  margin-right: 0px;
+  margin-left: 0px;
+  float: left;
+  box-sizing: border-box;
+  box-shadow: 3px 4px 4px black;
+  width: 100%;
+  height: 50vh;
+  border: none;
+}
+iframe{
+  height: 40vh;
+  width: 40%;
+  float: left;
+  margin-left: 20px;
+  overflow-y: auto;
+}

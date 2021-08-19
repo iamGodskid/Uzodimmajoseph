@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>>
+
+    </head>
+    <body>
+        <input type="file" id="upload" onchange="readFile();"/>
+        <button onclick="drop()">ALERT</button>
+        <video src="" alt="Video File..." id="result" autoplay></video>
+
+        <script type="text/javascript">
+ function readFile(){
+     var reader = new FileReader();
+     var selectedFile =  document.getElementById("upload").files[0];
+
+     reader.onload = function(e) {
+         var out = document.getElementById("result");
+         out.src = e.target.result;
+         alert(out.src);
+     }
+     reader.readAsDataURL(selectedFile);
+ }
+        </script>
+    </body>
+</html>

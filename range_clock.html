@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title></title>
+    <style type="text/css">
+      input{
+        width: 100%;
+      }
+      fieldset{
+        background-color: black;
+        height: 70px;
+        width: 270px;
+        position: relative;
+        border-radius: 15px;
+      }
+      span{
+        height: 50px;
+        width: 50px;
+        background-color: none;
+        border: none;
+        font-size: 20px;
+        color: rgb(0, 100, 200);
+      }
+    </style>
+  </head>
+  <body>
+  
+    <fieldset>
+      <center>
+    <input type="range" id="rang" min="0" max="60" value="" onchange="move()"/>
+    <br/>
+  <span id="view">00:00:00</span>
+  </center>
+    </fieldset>
+    <script>
+    var today = new Date();
+    var hr = today.getHours();
+    var min = today.getMinutes();
+    var sec = today.getSeconds();
+    
+    var range = document.querySelector("#rang");
+    
+    var view = document.querySelector("#view");
+    
+    function myFunc(){
+      sec++;
+      if(sec == 60){
+        min++;
+        sec = 00;
+      }
+      if(min == 60){
+        hr++;
+        min = 00;
+        sec = 00;
+      }
+      view.innerHTML = "Hour" + " " + hr + ":" + min + " " + "Minute";
+    } 
+      setInterval("myFunc()", 1000);
+      
+      function updateProgressValue(){
+        range.value = sec;
+      }
+    setInterval("updateProgressValue()", 1000);
+    </script>
+  </body>
+</html>
